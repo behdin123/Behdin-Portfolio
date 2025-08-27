@@ -1,0 +1,232 @@
+{
+  "hero": {
+    "contentCreationTitle": "🎬 Content Creation",
+    "contentCreation": "Digital Design",
+    "contentCreation1": "Video Production",
+    "contentCreation2": "From idea to delivery",
+    "webDevTitle": "💻 Web Development",
+    "webDev": "Frontend & Backend",
+    "webDev1": "UX & UI",
+    "webDev2": "Fast & responsive"
+  },
+  "home": {
+    "contentCreation": "Content Creation",
+    "visualization": "Visualization",
+    "designCommunication": "Design and Communication",
+    "since2021": "Since 2021",
+    "qualityNote": "For optimal quality, select 4K in the video settings (gear icon).",
+    "videoCVTitle": "My Video CV – A brief insight into my professionalism and drive",
+    "vikingTitle": "VIKING Life-Saving Equipment",
+    "vikingDescription1": "From February 2024, right after completing my education, I was hired full-time at <b>VIKING Life-Saving Equipment</b> in the communications department, which is part of the HR department. Here, I have worked closely with our Communication Manager and various teams, contributing to a wide range of communication and branding tasks.",
+    "vikingDescription2": "In my role, I have been responsible for supporting the <b>Employer Branding strategy</b> and <b>onboarding processes</b> through the development of templates and creative materials, such as illustrations, images, and videos.",
+    "videoTitle": "Videos:",
+    "videoDescription": "During my time at VIKING Life-Saving, I have worked on a wide range of videos, from e-learning courses and internal communication videos to social media content. I have gained experience with professional video equipment, including cameras, lighting, gimbal stabilization, and microphones. With a focus on purpose and target audience, I have developed video content and edited with special attention to the platform the video was intended for.",
+    "photographyTitle": "Photography:",
+    "photographyDescription": "My experience with photography at VIKING Life-Saving has primarily involved portrait photos as well as situational and atmospheric photos from events, large meetings, and gatherings. The goal has been to create material for both internal and external use. I have gained competence in using professional camera equipment and working with lighting setups, enabling me to capture the right mood and authenticity in each photo.",
+    "seeMore": "See more...",
+    "seeLess": "See less",
+    "videoExperienceTitle": "My Video Work Experience at VIKING Life-Saving",
+    "videoExperienceSubtitle": "Video - Visual Communication",
+    "videoExperienceDescription1": "At VIKING, I have been responsible for planning, recording, and producing videos that documented important gatherings and strategic meetings with a focus on internal communication. The videos consisted of interviews, b-rolls, and general clips from the events, which together created an in-depth and coherent presentation of the meetings' content and purpose.",
+    "videoExperienceDescription2": "These videos aimed to communicate strategies in a visually engaging way, ensuring each employee could understand their own role and contribution to the overall goals.",
+    "videoExperienceDescription3": "Additionally, I have recorded videos and images from VIKING's various departments, contributing to the company's employer branding strategy. Through this effort, I created content that strengthened VIKING's position as an attractive workplace and provided authentic insight into daily life and values across the organization.",
+    "statistics": {
+      "visualMemory": "People remember 65% of visual information after three days, compared to only 10% of heard information.",
+      "videoEngagement": "Companies using video in their internal communication experience a 75% increase in employee engagement.",
+      "visualEffectiveness": "Visual elements make information up to 80% more memorable compared to text."
+    },
+    "presentationDesignTitle": "Presentation Design and Structure",
+    "presentationDesignSubtitle": "From Information to Visualization",
+    "presentationDesignDescription1": "I have gained experience in developing and improving the company's PowerPoint templates to accurately reflect VIKING's visual identity and communication goals. In these projects, I have worked closely with internal teams to transform complex information and strategies into clear, visually engaging formats targeted at specific audiences.",
+    "presentationDesignDescription2": "My focus has been on creating presentations that are both informative and aesthetically pleasing, ensuring messages are conveyed in a way that makes them easy to understand and remember.",
+    "presentationDesignDescription3": "An important part of my work has been developing illustrations, building templates, and structuring images to support the visual content. By combining PowerPoint and various Adobe tools, I have ensured a coherent and professional presentation style that effectively reaches the target audience.",
+    "aboutMeTitle": "Behdin Bagheri",
+    "aboutMeDescription1": "Since 2009, I have had the pleasure of living in Denmark, where I have developed both personally and professionally. I am now 25 years old, and since starting my education, I have worked purposefully to build a career in visual communication and graphic design.",
+    "aboutMeDescription2": "After completing my multimedia designer education, I decided to apply my skills in the business world, where I was hired at VIKING Life-Saving, while simultaneously continuing my studies as a web developer."
+  },
+  
+  "navigation": {
+    "education": "Education",
+    "video": "Video",
+    "artworks": "Art Works",
+    "about": "About Me"
+  },
+  
+  "education": {
+    "institution": "Business Academy SouthWest",
+    "scrollDown": "Scroll down",
+    "multimedia": {
+      "startYear": "Started in 2020",
+      "title": "Multimedia Designer",
+      "description": "As a Multimedia Designer, I am able to work at all levels of digital design, including web solutions, <strong>digital user experiences (UX)</strong>, content production for digital media <strong>(content creation)</strong>, <strong>frontend web development</strong> and <strong>idea development and project management.</strong>",
+      "ui": {
+        "title": "User Interface (UI)",
+        "description": "Screens, web pages, and visual elements such as buttons and icons that create <strong>interaction</strong> between user and a product or service fall under the <strong>UI category.</strong>"
+      },
+      "ux": {
+        "title": "User Experience (UX)",
+        "description": "Meeting <strong>user needs</strong> is the most important thing in the <strong>UX world</strong>. It's necessary to create <strong>positive experiences</strong> for users that keep them <strong>loyal</strong> to a product or company."
+      }
+    },
+    "webdev": {
+      "startYear": "Started in 2022",
+      "title": "Web Developer",
+      "description1": "After completing my web development education, I have gained a solid understanding of project management and the agile working method, enabling me to manage complex projects from idea to completion. My work is characterized by a high degree of detail and quality, while ensuring that projects are delivered within the given deadline and with the precision that the target group needs.",
+      "description2": "Through my education and experience, I have also gained deep insight into UX design and its importance for the user experience. I am used to working with user-centered design principles and have developed a strong ability to identify target group needs, ensuring that digital solutions are both functional, necessary and visually appealing."
+    },
+    "uiDesign": {
+      "subtitle": "Creating intuitive visual elements for digital communication",
+      "title": "User Interface (UI) Design and Visual Communication",
+      "description": "As an important part of my education, I worked on developing user-friendly UI elements that created clear and engaging interaction between users and digital solutions. My approach to UI design focused on creating visual elements that supported companies' brand identity and ensured an intuitive user journey. Through designing screens, web pages, buttons and icons, I strived to deliver solutions that conveyed complex messages in a simple and visually appealing way, making the content easily accessible and engaging."
+    },
+    "uxDesign": {
+      "subtitle": "User-centered experiences that create engagement and understanding",
+      "title": "User Experience (UX) Testing and Data for Optimal Communication",
+      "description": "My approach to UX was centered on identifying target group needs and ensuring that all interactions created value and positive experiences for the user. Using user testing and target group analysis, I designed experiences that maintained user loyalty and accommodated user needs. Through my work, I combined visual communication elements with UCD principles (User Centered Design) to ensure that digital solutions were both functional and inspired engagement and interaction."
+    },
+    "agile": {
+      "subtitle": "Flexible and structured project management from idea to completion",
+      "title": "Agile Project Management and Project Control",
+      "description": "The experience I have gained in agile project management enables me to effectively manage projects from idea to completion. I have worked with agile methods that ensure a flexible approach where changes and feedback can be integrated along the way to achieve the best result. My focus is on delivering high-quality projects with precision while meeting deadlines and project goals. This approach has enabled me to create structured processes that optimize workflow and ensure a high level of detail in all project phases."
+    }
+  },
+  "artworks": {
+    "title": "My Visual Universe",
+    "scrollDown": "Scroll down",
+    "navigation": {
+      "workPhotos": "Work Photos",
+      "officePhotos": "Office Photos",
+      "logoBusinessCard": "Logo & Business Card",
+      "webdesign": "Webdesign",
+      "multimediaPhotos": "Multimedia Photos"
+    },
+    "sections": {
+      "photographyHighlights": "Photography Highlights",
+      "workPhotosSubtitle": "Work photos from VIKING HQ - taken by me",
+      "officePhotosSubtitle": "Office photos - taken by me at VIKING HQ",
+      "logoBusinessCard": {
+        "title": "Logo & Business card",
+        "subtitle": "These were created during my multimedia education"
+      },
+      "webDesign": {
+        "title": "Web-design & Prototypes",
+        "subtitle": "All prototypes were created by me using Adobe XD",
+        "adobeXD": {
+          "title": "Adobe XD",
+          "description": "A website should always be designed and developed as a prototype to be tested before being implemented and made available online for customers."
+        }
+      },
+      "multimediaPhotos": {
+        "title": "Photography Highlights",
+        "subtitle": "All these photos were taken while I was studying multimedia"
+      },
+      "posters": "Posters"
+    }
+  },
+  "about": {
+    "title": "Who am I?",
+    "description": "You can <strong>download</strong> my CV in Danish or English",
+    "downloadDanish": "Download Danish CV",
+    "downloadEnglish": "Download English CV"
+  },
+    "video": {
+      "title": "Video Production",
+      "scrollDown": "Scroll down",
+      "assets": {
+        "title": "Video Assets",
+        "subtitle": "All scenes are recorded by me",
+        "qualityNote": "For optimal quality, select 4K from the video settings."
+      },
+      "production": {
+        "tools": "Premiere Pro & After Effects",
+        "title": "From Recording to Final Production",
+        "description1": "If you want to get more attention around your brand or products, you should strongly consider incorporating video content into your strategies.",
+        "description2": "In recent years, I have gained extensive experience with <strong> Premiere Pro and After Effects </strong> programs which I use for post-editing of videos.",
+        "description3": "I can take care of everything. From scenario to recording and all the way to final production, adapted to different platforms.",
+        "description4": "They say that a picture is worth 1000 words, so think about the magic that lies in video content and what it can do for you and your business."
+      },
+      "employerBranding": {
+        "title": "Employer Branding Videos",
+        "subtitle1": "Examples of videos produced for VIKING's employer branding, adapted for social media",
+        "subtitle2": "Most video recordings are filmed by me with professional camera equipment, edited in Premiere Pro and adapted for social media through Storykit."
+      },
+      "browserSupport": "Your browser does not support the video tag."
+    },
+    "contentCreation": {
+      "mainTitle": "Content Creation",
+      "scrollDown": "Scroll down",
+      "beforeAfterTitle": "Before/After - Image Editing",
+      "beforeAfterDesc1": "Using <strong>Photoshop</strong> and <strong>Topaz Photo AI</strong>, we can transform ordinary images into professional assets, perfect for <strong>campaigns, websites, and corporate presentations</strong>.",
+      "beforeAfterDesc2": "Images and visual elements should reflect the <strong>company's brand identity</strong> – in <strong>colors</strong>, <strong>lighting</strong>, <strong>contrast</strong>, and the overall look. With tools like <strong>Photoshop</strong> and AI-based solutions such as <strong>Topaz Photo AI</strong>, these elements can be <strong>fine-tuned</strong> and <strong>harmonized</strong> to support the <strong>brand's visual expression</strong> across all platforms.",
+      "visualStoryTitle": "Visual Communication & Storytelling",
+      "visualCommTitle": "Visual communication",
+      "visualCommDesc": "I design visual solutions that clearly communicate messages – from composition and colors to typography and hierarchy. The goal is <strong>clarity</strong>, <strong>recognizability</strong>, and a <strong>consistent visual line</strong> across channels.",
+      "storytellingTitle": "Storytelling",
+      "storytellingDesc": "Good stories create relationships. I structure content for social media, campaigns, and video with a focus on <strong>relevance</strong>, <strong>flow</strong>, and a clear call-to-action – so the message is remembered and <strong>converts</strong>.",
+      "socialTitle": "Social Media – Content Management",
+      "socialDesc1": "I plan, produce, and publish <strong>brand-consistent</strong> content for <strong>Instagram</strong>, <strong>Facebook</strong>, and <strong>LinkedIn</strong> — from idea and content plan to copy, graphics, and video. The focus is on <strong>visual coherence</strong>, performance, and ongoing optimization.",
+      "socialDesc2": "Colors, lighting, contrast, and format are adapted to the channel and <strong>brand identity</strong>, so the content works both organically and in campaigns — and creates <strong>measurable effect</strong>.",
+      "brandLogoTitle": "Brand & Logo Development",
+      "adobeToolsTitle": "Adobe Tools in My Workflow"
+    },
+    "webDev": {
+      "mainTitle": "Web Development",
+      "mainSubtitle": "Backend & Frontend",
+      "scrollDown": "Scroll down",
+      "swiperTitle": "Websites I've Built",
+      "frontendDev": "Frontend Development",
+      "uxUiSectionTitle": "My Approach to UX & UI Design",
+      "uxTitle": "UX Design",
+      "uxText": "I always start with the <strong>user's needs</strong> – through <strong>research</strong>, <strong>user journeys</strong>, and <strong>user testing</strong>. I facilitate workshops and collaborate with <strong>developers</strong> and <strong>stakeholders</strong> to ensure the solution creates <strong>real value</strong>.",
+      "uiTitle": "UI Design",
+      "uiText": "With tools like <strong>Figma</strong> and <strong>Adobe XD</strong>, I create <strong>wireframes</strong> and <strong>prototypes</strong> that combine <strong>functionality</strong> and <strong>aesthetics</strong>. I focus on <strong>brand identity</strong>, <strong>color choices</strong>, and <strong>typography</strong> – ensuring a <strong>consistent visual experience</strong>.",
+      "xdSectionTitle": "Adobe XD - Figma Prototypes",
+      "xdSectionSubtitle": "UX/UI - web design",
+      "codeUniverseTitle": "My code universe",
+      "designProcessSectionTitle": "Design Process & Targeted Solutions",
+      "designThinkingTitle": "Design Thinking",
+      "designThinkingText": "I work <strong>iteratively</strong> – from gathering <strong>user insights</strong> to developing and testing <strong>prototypes</strong>. Through <strong>empathy</strong> and <strong>ideation</strong>, I find solutions that match <strong>the users' real needs</strong>.",
+      "targetedSolutionsTitle": "Targeted Solutions",
+      "targetedSolutionsText": "Focusing on a <strong>specific target group</strong>, I continuously adapt the design based on <strong>feedback</strong>. I create solutions that are both <strong>user-friendly</strong> and support <strong>business goals</strong>.",
+      "fullstackSectionTitle": "Full Stack & Backend Development",
+      "fullstackFrontend": "Frontend integration",
+      "fullstackText1": "I have experience developing <strong>full stack web applications</strong> with <strong>Node.js</strong> and <strong>Express.js</strong>, building <strong>REST APIs</strong> and integrating them with <strong>databases</strong>. Projects include everything from <strong>frontend integration</strong> to backend logic.",
+      "fullstackText2": "I focus on <strong>web security</strong> by implementing <strong>JWT-based authentication</strong> and ensuring proper <strong>role-based access control</strong>. The code is structured according to <strong>Separation of Concerns (SoC)</strong> and follows <strong>Object-Oriented Programming</strong> principles.",
+      "fullstackText3": "To ensure system quality, I work with both <strong>unit tests</strong> and <strong>end-to-end tests</strong> using <strong>Mocha</strong> and <strong>Chai</strong> — so performance and stability are documented.",
+      "backendSectionTitle": "Backend Development Expertise",
+      "backendCard1Title": "Server-Side - Node.js & Express.js",
+      "backendCard1Text": "Building scalable, secure, and efficient server-side applications with <strong>Node.js</strong> and <strong>Express.js</strong>, following best practices for <strong>performance</strong> and <strong>security</strong>.",
+      "backendCard2Title": "REST API Design & Integration",
+      "backendCard2Text": "Designing and implementing <strong>RESTful APIs</strong> for smooth communication between frontend and backend, ensuring <strong>clean architecture</strong> and <strong>seamless integration</strong>.",
+      "backendCard3Title": "Database Management",
+      "backendCard3Text": "Connecting applications to <strong>MongoDB</strong> and <strong>SQL databases</strong> with optimized queries and data modeling for performance and reliability.",
+      "enterpriseSectionTitle": "Enterprise Platforms – ServiceNow & Dynamics 365",
+      "enterpriseText1": "I have a strong understanding of development in <strong>platform ecosystems</strong> such as <strong>ServiceNow</strong> and <strong>Dynamics 365</strong>. Although I haven't had commercial projects in these systems yet, I can quickly transfer my <strong>full-stack</strong> experience (REST, auth, data modeling, integrations, field mapping) to these environments.",
+      "enterpriseText2": "<strong>Architecture & data:</strong> environments (Dev/Test/Prod), <strong>ALM</strong> and deployment, table/entity design (<strong>ServiceNow tables</strong> / <strong>Dataverse</strong>), roles and <strong>security</strong>. In Dynamics you work with <strong>Solutions</strong>, in ServiceNow with <strong>Update Sets</strong>.",
+      "enterpriseText3": "<strong>Processes & quality:</strong> structured code according to <strong>Separation of Concerns</strong>, testability and version control (Git - DevOps). I work iteratively and document decisions and flows.",
+      "dataTrackingTitle": "Data tracking & Conversion Rate Optimization (CRO)",
+      "dataTrackingP1": "With <strong>Google Analytics 4</strong>, we can measure what really matters – for example, how many visitors we have, where they click, and how many <strong>complete a purchase</strong> or fill out a form. This gives us <strong>qualitative data</strong> so we can see exactly where in the customer journey people drop off and what drives results.",
+      "dataTrackingP2": "With <strong>Hotjar</strong> / <strong>Microsoft Clarity</strong>, I analyze <strong>heatmaps</strong>, <strong>session recordings</strong>, and <strong>funnels</strong> to find friction: e.g., drop-offs in checkout, unclear CTAs, or slow pages.",
+      "dataTrackingP3": "Based on the data, I prioritize hypotheses, run <strong>experiments/A-B tests</strong>, and iterate the solution to improve <strong>conversion rate</strong>, <strong>engagement</strong>, and <strong>revenue</strong> – with clear <strong>KPIs</strong> and ongoing reporting.",
+      "abTestingGdprTitle": "A/B Testing & GDPR",
+      "abTestingTitle": "A/B Testing – Split-test",
+      "abTestingP": "With A/B tests, we can try two versions of a page, e.g., a new button color or a changed headline, and see which solution gives the most conversions. This means we optimize based on real user behavior rather than gut feeling.",
+      "gdprTitle": "GDPR & Data Collection",
+      "gdprP": "Data collection must comply with GDPR. This means transparency and respect for users' privacy – we only collect the information that is necessary and ensure consent and proper anonymization.",
+      "cmsToolsTitle": "CMS Platforms I Work With"
+    },
+      "footer": {
+        "title": "Let's create results together!",
+        "contact": {
+          "title": "Contact me",
+          "subtitle": "Write an email or send me a SMS"
+        },
+        "email": "behdin2010@gmail.com",
+        "phone": "+45 53 52 52 39",
+        "social": {
+          "title": "Find me on social media:"
+        }
+      }
+    }
+  
+  

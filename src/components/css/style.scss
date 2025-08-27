@@ -1,0 +1,533 @@
+/* Social Media – Content Management - Both for ContentCreation and WebDevelopment Page */
+.social-section {
+    background: var(--background-color);
+    color: #fff;
+    padding: 6rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.text-col {
+    flex: 1;
+    min-width: 280px;
+
+    .section-title {
+        text-align: left;
+        font-size: 50px !important;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+        line-height: 1.65;
+        max-width: 540px;
+    }
+
+    /* ردیف لوگوها */
+    .tool-logos {
+        display: flex;
+        gap: 2.25rem;
+        padding: 1rem 2rem 1rem 0;
+
+        img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.8);
+            transition: filter .2s ease, transform .2s ease;
+        }
+
+        img:hover {
+            filter: none;
+            transform: translateY(-2px);
+        }
+    }
+
+    /* برای همخوانی با قبل اگر خواستی کلاس جدا داشته باشی */
+    .sm-logos img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.media-col {
+    /* اندازه شبیه twentytwenty قبلی */
+    width: 45vw;
+    max-width: 700px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    @media (max-width: 1500px) {
+        width: 30vw;
+        margin-right: 0;
+    }
+
+    @media (max-width: 1000px) {
+        width: 60vw;
+    }
+
+    @media (max-width: 550px) {
+        width: 80vw;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+/* Social Media – Content Management - Both for ContentCreation and WebDevelopment Page */
+
+
+/* Divider line */
+.section-divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 2px;
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.25) 15%,
+            rgba(255, 255, 255, 0.35) 50%,
+            rgba(255, 255, 255, 0.25) 85%,
+            transparent 100%);
+    margin: 3rem 0;
+    opacity: .85;
+}
+
+/* ===== Brand & Logo Development (logo grid) ===== */
+.brand-logo-section {
+    background: var(--split-backgroundColor);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-logo-section .title {
+    text-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+    font-size: 2.5rem;
+    margin-bottom: 3rem !important;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Card */
+.logo-item {
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    min-width: 180px;
+}
+
+.logo-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.logo-item img {
+    max-height: 150px;
+    max-width: 180px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 15px rgba(0, 0, 0, 0.15));
+}
+
+/* Adobe tools: کمی کوچکتر و یکنواخت‌تر */
+.tool-grid {
+    gap: 2rem 3rem;
+}
+
+.logo-item.tool {
+    background: var(--block-backgroundColor);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-item.tool img {
+    max-height: 72px;
+    max-width: 120px;
+    border-radius: 14px;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .2));
+}
+
+/* Wrapper for Adobe logo and name */
+.tool-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    margin-bottom: 0.75rem;
+}
+
+/* Text under Adobe logos */
+.tool-name {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 550px) {
+    .section-divider {
+        margin: 2rem 0;
+    }
+}
+
+.backend-card{
+  p{
+    line-height: 1.9rem
+  }
+}
+
+
+/* For About me and Education Page */
+.img{
+    h1{
+        color: #ffffff;
+        font-size: 55px;
+    }
+}
+
+.colorCorrect{
+  color: var(--tertiary-color) !important;
+}
+
+.h1{
+    h1{
+    color: var(--title-color);
+    margin: 0 0 10px 0;
+    }
+    p{
+      color: #ffffff;
+      line-height: clamp(1.4, 1.6, 2);
+      letter-spacing: 0.2px;
+      width: auto !important;
+    }
+  }
+
+  .home{
+    h1{
+        color: var(--tertiary-color);
+    }
+  }
+    .h2{
+      h2{
+        margin: 10px 0 10px 0;
+        color: var(--title-color);
+        letter-spacing: 0.3px;
+      }
+      h3{
+        color: var(--tertiary-color);
+        font-size: 16px;
+        line-height: 26.6px;
+        margin-top: 0;
+      }
+    }
+
+
+    .gray{
+        background: var(--secondary-color) !important;
+    }
+
+
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      z-index: 4;
+      text-shadow: 2px 2px 4px rgb(0, 0, 0);
+      .line {
+          margin: 15px auto 10px auto;
+          width: 2px !important;
+          height: 80px;
+          background-color: #fff;
+          animation: bounce 2s infinite;
+      }
+  }
+  
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+      }
+      40% {
+          transform: translateY(-10px);
+      }
+      60% {
+          transform: translateY(-5px);
+      }
+  }
+
+
+
+
+
+.website {
+  padding: 110px 8% 70px 8%;
+  background: #24353F;
+
+  .btn {
+    margin-top: 177px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    color: #ffffff !important;
+  }
+
+  h3{
+    color: #ffffff !important;
+  }
+
+  .code-lang {
+    width: 25vw;
+  }
+}
+
+.txt-box {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        padding: 0 !important;
+      }
+      h2{
+        padding: 0 !important;
+      }
+      h3{
+        padding: 0 !important;
+      }
+}
+
+.btn{
+    background: #24353F;
+    color: #D9C4A9;
+    border-radius: 50px;
+    width: 220px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .btn:hover{
+    background: transparent;
+    border: solid 3px #24353F;
+    color: #24353F;
+  }
+
+  .line{
+    content: "";
+    background: var(--title-color);
+    height: 2px;
+    width: 76%;
+    margin: 40px auto;
+  }
+
+
+.container.Multimediedesigner.VIKING {
+  padding: 110px 8%;
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+
+  .Multimediedesigner {
+  position: relative;
+  background: var(--primary-color);
+  padding-top: 110px;
+
+
+  .ui {
+    margin-right: 5%;
+  }
+
+  .webmock {
+    .first-img {
+      width: 28vw;
+      height: auto;
+    }
+  }
+
+  .txt {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-left: 5%;
+  }
+
+  .ui-ux {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-top: 85px;
+    }
+  }
+}
+
+  .Multimediedesigner {
+    .txt {
+        width: 55%;
+    }
+ }
+
+.container.Multimediedesigner.VIKING iframe {
+  width: 70vw;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 200px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container.Multimediedesigner.VIKING iframe {
+    width: 100vw;
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container.Multimediedesigner.VIKING iframe {
+    min-height: 140px;
+  }
+}
+/* For About me and Education Page */
+
+
+
+
+
+
+
+@media only screen and (max-width: 1380px){
+    .bg-img{
+        height: 53.5vw !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .bg-img{
+        height: 61.5vw !important;
+    }
+    .btn-box{
+        .btn{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+}
+@media only screen and (max-width: 1120px){
+    .bg-img{
+        height: 69.5vw !important;
+    }
+    .btn-box{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        width: 800px;
+        }
+        .website-txt {
+            margin-left: 0 !important;
+          }
+}
+@media only screen and (max-width: 940px){
+    .bg-img{
+        height: 82vw !important;
+        h1{
+            font-size: 45px !important;
+          }
+    }
+    #facts-btn{
+        display: flex;
+        justify-content: center !important;
+    }
+    .btn-box{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start !important;
+        padding-bottom: 5px;
+        width: 100%;
+        }
+}
+@media only screen and (max-width: 780px){
+    .bg-img{
+        height: 600px !important;
+        h1{
+        font-size: 40px !important;
+      }
+      h2{
+          font-size: 25px !important;
+      }
+    }
+}
+@media only screen and (max-width: 660px){
+    .bg-img{
+        h1{
+            font-size: 35px !important;
+        }
+    }
+    .webmock .second-img[data-v-48676f02] {
+        width: 100%;
+        margin: 50px 0 20px 0;
+    }
+}
+@media only screen and (max-width: 420px){
+    .bg-img{
+        height: 600px !important;
+        h1{
+            font-size: 30px !important;
+        }
+    }
+}
+@media only screen and (max-width: 378px){
+    .bg-img{
+        height: 550px !important;
+        h1{
+            font-size: 25px;
+        }
+    }
+}

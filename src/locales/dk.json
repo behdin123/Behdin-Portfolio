@@ -1,0 +1,228 @@
+{
+    "hero": {
+    "contentCreationTitle": "🎬 Content Creation",
+    "contentCreation": "Digitalt design",
+    "contentCreation1": "Videoproduktion",
+    "contentCreation2": "Fra idé til levering",
+    "webDevTitle": "💻 Webudvikling",
+    "webDev": "Frontend & Backend",
+    "webDev1":  "UX & UI",
+    "webDev2":  "Hurtig & responsiv"
+  },
+    "home": {
+      "contentCreation": "Content Creation",
+      "visualization": "Visualisering",
+      "designCommunication": "Design og Kommunikation",
+      "videoCVTitle": "Mit Video-CV – Et kort indblik i min faglighed og drivkraft",
+      "qualityNote": "For optimal kvalitet, vælg 4K i videoens indstillinger (tandhjul).",
+      "since2021": "Siden 2021",
+      "vikingTitle": "VIKING Life-Saving Equipment",
+      "vikingDescription1": "Fra februar 2024, lige efter jeg afsluttede min uddannelse, blev jeg ansat på fuld tid hos <b>VIKING Life-Saving Equipment</b> i kommunikationsafdelingen, som er en del af HR-afdelingen. Her har jeg arbejdet tæt sammen med vores kommunikationschef og forskellige teams og bidraget til en bred vifte af kommunikations- og brandingopgaver.",
+      "vikingDescription2": "I min rolle har jeg været ansvarlig for at støtte <b>Employer Branding-strategien</b> og <b>onboarding-processer</b> gennem udvikling af skabeloner og kreative materialer, såsom illustrationer, billeder og videoer.",
+      "videoTitle": "Videoer:",
+      "videoDescription": "I min tid hos VIKING Life-Saving har jeg arbejdet med en bred vifte af videoer, fra e-læringskurser og interne kommunikationsvideoer til content for sociale medier. Jeg har opnået erfaring med professionelt videoudstyr, herunder kamera, lys, gimbal-stabilisering og mikrofoner. Med fokus på formålet og målgruppen har jeg udviklet videoindhold og redigeret med særligt hensyn til det platform videoen skulle sendes ud på.",
+      "photographyTitle": "Fotografering:",
+      "photographyDescription": "Min erfaring med fotografering hos VIKING Life-Saving har især omfattet portrætbilleder samt situations- og stemningsbilleder fra events, store møder og forsamlinger. Målet har været at skabe materiale til både intern og ekstern brug. Jeg har opnået kompetence i brugen af professionelt kameraudstyr og arbejdet med lysopsætninger, hvilket har gjort mig i stand til at fange den rette stemning og autenticitet i hvert billede.",
+      "seeMore": "Se mere...",
+      "seeLess": "Se mindre",
+      "videoExperienceTitle": "Min Erfaring med video arbejde hos VIKING Life-Saving",
+      "videoExperienceSubtitle": "Video - Visuel Kommunikation",
+      "videoExperienceDescription1": "Hos VIKING har jeg haft ansvaret for at planlægge, optage og udarbejde videoer, der dokumenterede vigtige forsamlinger og strategiske møder med fokus på intern kommunikation. Videoerne bestod af interviews, b-rolls og generelle klip fra arrangementerne, som tilsammen skabte en dybdegående og sammenhængende præsentation af mødernes indhold og formål.",
+      "videoExperienceDescription2": "Disse videoer havde til formål at formidle strategier på en visuelt engagerende måde, så hver medarbejder kunne forstå sin egen rolle og bidrag til de overordnede mål.",
+      "videoExperienceDescription3": "Derudover har jeg optaget videoer og billeder fra VIKING's forskellige afdelinger, som bidrog til virksomhedens employer branding-strategi. Med denne indsats skabte jeg indhold, der styrkede VIKING’s position som en attraktiv arbejdsplads og gav en autentisk indsigt i hverdagen og værdierne på tværs af organisationen.",
+      "statistics": {
+      "visualMemory": "Mennesker husker 65% af visuelle informationer efter tre dage, sammenlignet med kun 10% af de hørte.",
+      "videoEngagement": "Virksomheder, der bruger video i deres interne kommunikation, oplever en 75% stigning i medarbejderengagement.",
+      "visualEffectiveness": "Visuelle elementer gør information op til 80% mere mindeværdig sammenlignet med tekst."
+       },
+      "presentationDesignTitle": "Præsentationsdesign og Struktur",
+      "presentationDesignSubtitle": "Fra Information til Visualisering",
+      "presentationDesignDescription1": "Jeg har opnået erfaring med at udvikle og forbedre virksomhedens PowerPoint-skabeloner, så de præcist afspejler VIKING’s visuelle identitet og kommunikationsmål. I disse projekter har jeg arbejdet tæt sammen med interne teams for at omdanne komplekse informationer og strategier til klare, visuelt engagerende formater, der er målrettet specifikke målgrupper.",
+      "presentationDesignDescription2": "Mit fokus har været at skabe præsentationer, som er både informative og æstetisk tiltalende, så budskaberne formidles på en måde, der gør dem lette at forstå og huske.",
+      "presentationDesignDescription3": "En vigtig del af mit arbejde har været at udvikle illustrationer, opbygge skabeloner og strukturere billeder for at understøtte det visuelle indhold. Ved at kombinere PowerPoint og diverse Adobe-værktøjer har jeg sikret en sammenhængende og professionel præsentationsstil, som effektivt når ud til målgruppen.",
+      "aboutMeTitle": "Behdin Bagheri",
+      "aboutMeDescription1": "Siden 2009 har jeg haft fornøjelsen af at bo i Danmark, hvor jeg har udviklet mig både personligt og fagligt. Jeg er nu 25 år og har siden jeg startede min uddannelse arbejdet målrettet på at opbygge en karriere inden for visuel kommunikation og grafisk design.",
+      "aboutMeDescription2": "Efter at have afsluttet multimediedesigner uddannelsen besluttede jeg at anvende mine færdigheder i erhvervslivet, hvor jeg blev ansat hos VIKING Life-Saving, samtidig med at jeg studerede videre som webudvikler."
+    },
+    "navigation": {
+        "education": "Uddannelse",
+        "video": "Video",
+        "artworks": "Art Works",
+        "about": "Om Mig"
+    },
+    "education": {
+    "institution": "Erhvervsakademi SydVest",
+    "scrollDown": "Scroll ned",
+    "multimedia": {
+      "startYear": "Startede i 2020",
+      "title": "Multimediedesigner",
+      "description": "Som multimediedesigner er jeg i stand til at arbejde på alle niveauer af digitalt design, herunder webløsninger, <strong>digitale brugeroplevelser (UX)</strong>, indholdsproduktion til digitale medier <strong>(content creation)</strong>, <strong>frontend webudvikling</strong> og <strong>idéudvikling og projektledelse.</strong>",
+      "ui": {
+        "title": "User Interface (UI)",
+        "description": "Skærme, websider og visuelle elementer såsom knapper og ikoner, der skaber <strong>interaktion</strong> mellem bruger og et produkt eller en service, hører under <strong>UI-kategorien.</strong>"
+      },
+      "ux": {
+        "title": "User Experience (UX)",
+        "description": "At imødekomme <strong>brugernes behov</strong> er det vigtigste i <strong>UX-verdenen</strong>. Det er nødvendigt at skabe <strong>positive oplevelser</strong> for brugerne, der holder dem <strong>loyale</strong> over for et produkt eller virksomhed."
+      }
+    },
+    "webdev": {
+      "startYear": "Startede i 2022",
+      "title": "Webudvikler",
+      "description1": "Efter at have fuldført min uddannelse i webudvikling har jeg opnået en solid forståelse for projektledelse og den agile arbejdsmetode, hvilket gør mig i stand til at styre komplekse projekter fra idé til færdiggørelse. Mit arbejde er kendetegnet ved en høj grad af detaljer og kvalitet, og samtidig sikrer jeg, at projekterne leveres inden for den givne deadline og med den præcision, som målgruppen har brug for.",
+      "description2": "Gennem min uddannelse og erfaring har jeg også fået en dyb indsigt i UX-design og dets betydning for brugeroplevelsen. Jeg er vant til at arbejde med brugercentrerede designprincipper og har opnået en stærk evne til at identificere målgruppens behov, hvilket sikrer, at de digitale løsninger både er funktionelle, nødvendige og visuelt tiltalende."
+    },
+    "uiDesign": {
+      "subtitle": "Skabelse af intuitive visuelle elementer til digital kommunikation",
+      "title": "User Interface (UI) Design og Visuel Kommunikation",
+      "description": "Som en vigtig del af min uddannelse arbejdede jeg med at udvikle brugervenlige UI-elementer, der skabte en klar og engagerende interaktion mellem brugeren og digitale løsninger. Min tilgang til UI-design fokuserede på at skabe visuelle elementer, som understøttede virksomheders brandidentitet og sikrede en intuitiv brugerrejse. Gennem design af skærme, websider, knapper og ikoner stræbte jeg efter at levere løsninger, der formidlede komplekse budskaber på en enkel og visuelt appellerende måde, der gjorde indholdet let tilgængeligt og engagerende."
+    },
+    "uxDesign": {
+      "subtitle": "Brugercentrerede oplevelser, der skaber engagement og forstålighed",
+      "title": "User Experience (UX) Brugertest og data for Optimal Kommunikation",
+      "description": "Min tilgang til UX var centreret om at identificere målgruppens behov og sikre, at alle interaktioner skabte værdi og positive oplevelser for brugeren. Ved hjælp af brugertest og målgruppeanalyser designede jeg oplevelser, der fastholdt brugerloyalitet og tilgodeså brugerens behov. Gennem mit arbejde kombinerede jeg visuelle kommunikationselementer med UCD-principper (User Centered Design) for at sikre, at de digitale løsninger både var funktionelle og inspirerede til engagement og interaktion."
+    },
+    "agile": {
+      "subtitle": "Fleksibel og struktureret projektledelse fra idé til færdiggørelse",
+      "title": "Agil Projektledelse og Projektstyring",
+      "description": "Erfaring som jeg har opnået inden for agil projektledelse, gør mig i stand til effektivt at styre projekter fra idé til afslutning. Jeg har arbejdet med agile metoder, som sikrer en fleksibel tilgang, hvor ændringer og feedback kan integreres undervejs for at opnå det bedste resultat. Mit fokus er på at levere projekter af høj kvalitet og med præcision, samtidig med at jeg overholder deadlines og projektmål. Denne tilgang har gjort det muligt for mig at skabe strukturerede processer, der optimerer arbejdsflow og sikrer en høj detaljegrad i alle projektfaser."
+    }
+  },
+  "artworks": {
+    "title": "Mit Visuelle Univers",
+    "scrollDown": "Scroll ned",
+    "navigation": {
+      "workPhotos": "Arbejdsbilleder",
+      "officePhotos": "Kontorbilleder",
+      "logoBusinessCard": "Logo & Visitkort",
+      "webdesign": "Webdesign",
+      "multimediaPhotos": "Multimediebilleder"
+    },
+    "sections": {
+      "photographyHighlights": "Photography Highlights",
+      "workPhotosSubtitle": "Arbejdsbilleder fra VIKING HQ – taget af mig",
+      "officePhotosSubtitle": "Kontorbilleder – taget af mig ved VIKING HQ",
+      "logoBusinessCard": {
+        "title": "Logo & Business card",
+        "subtitle": "Disse har jeg udarbejdet da jeg var igang med multimedieuddannelsen"
+      },
+      "webDesign": {
+        "title": "Web-design & Prototyper",
+        "subtitle": "Alle prototyperne er udarbjedet af mig med Adobe XD",
+        "adobeXD": {
+          "title": "Adobe XD",
+          "description": "Et website skal altid designes og udarbejdes som en prototype for blandt andet at blive testet før den bliver implementeret og blive online tilgængeligt for kunderne."
+        }
+      },
+      "multimediaPhotos": {
+        "title": "Photography Highlights",
+        "subtitle": "Alle billederne her er taget, mens jeg var i gang med multimedieuddannelsen"
+      },
+      "posters": "Posters"
+    }
+  },
+  "about": {
+    "title": "Hvem er jeg?",
+    "description": "Du kan <strong>downloade</strong> mit CV på dansk eller engelsk",
+    "downloadDanish": "Download dansk CV",
+    "downloadEnglish": "Download engelsk CV"
+  },
+    "video": {
+      "title": "Videoproduktion",
+      "scrollDown": "Scroll ned",
+      "assets": {
+        "title": "Video Assets",
+        "subtitle": "Alle scener er optaget af mig",
+        "qualityNote": "For optimal kvalitet, vælg 4K fra indstillingerne i videoen."
+      },
+      "production": {
+        "tools": "Premiere Pro & After Effects",
+        "title": "Fra optagelser til færdig produktion",
+        "description1": "Har du lyst til at få større opmærksomhed omkring dit brand eller produkter, så skal du stærkt overveje video content ind i dinne strategier.",
+        "description2": "På de seneste år har jeg opånet stor erfaring inden for <strong>Premiere Pro og After Effects</strong> programmerne som jeg bruger til at postredigereing af videoerne.",
+        "description3": "Jeg kan sørge for det hele. Fra scenarie, til optagelser og helt frem til færdig produktion, tilpasset de forskellige platforme.",
+        "description4": "Man siger at et billede siger mere end 1000 ord, så tænk over hvilken magi der ligger i video content og hvad det kan medføre for dig og din virksomhed."
+      },
+      "employerBranding": {
+        "title": "Employer Branding Videos",
+        "subtitle1": "Eksempler på videoer udarbejdet til VIKING's employer branding, tilpasset til sociale medier",
+        "subtitle2": "De fleste videooptagelser er filmet af mig med professionelt kameraudstyr, redigeret i Premiere Pro og tilpasset til sociale medier gennem Storykit."
+      },
+      "browserSupport": "Din browser understøtter ikke video tagget."
+    },
+    "contentCreation": {
+      "mainTitle": "Content Creation",
+      "scrollDown": "Scroll ned",
+      "beforeAfterTitle": "Before/After - Billedredigering",
+      "beforeAfterDesc1": "Ved brug af <strong>Photoshop</strong> og <strong>Topaz Photo AI</strong> kan vi forvandle almindelige billeder til professionelle assets, perfekte til <strong>kampagner, websites og corporate præsentationer</strong>.",
+      "beforeAfterDesc2": "Billeder og visuelle elementer bør afspejle <strong>virksomhedens brandidentitet</strong> – både i <strong>farver</strong>, <strong>belysning</strong>, <strong>kontrast</strong> og det overordnede look. Med værktøjer som <strong>Photoshop</strong> og AI-baserede løsninger som <strong>Topaz Photo AI</strong> kan disse elementer <strong>finjusteres</strong> og <strong>harmoniseres</strong>, så de understøtter <strong>brandets visuelle udtryk</strong> på tværs af alle platforme.",
+      "visualStoryTitle": "Visuel kommunikation & Storytelling",
+      "visualCommTitle": "Visuel kommunikation",
+      "visualCommDesc": "Jeg designer visuelle løsninger, der tydeligt formidler budskaber – fra komposition og farver til typografi og hierarki. Målet er <strong>klarhed</strong>, <strong>genkendelighed</strong> og en <strong>konsekvent visuel linje</strong> på tværs af kanaler.",
+      "storytellingTitle": "Storytelling",
+      "storytellingDesc": "Gode historier skaber relationer. Jeg strukturerer indhold til sociale medier, kampagner og video med fokus på <strong>relevans</strong>, <strong>flow</strong> og en tydelig call-to-action – så budskabet bliver husket og <strong>konverterer</strong>.",
+      "socialTitle": "Social Media – Content Management",
+      "socialDesc1": "Jeg planlægger, producerer og publicerer <strong>brand-konsistent</strong> indhold til <strong>Instagram</strong>, <strong>Facebook</strong> og <strong>LinkedIn</strong> — fra idé og content-plan til copy, grafik og video. Fokus er på <strong>visuel sammenhæng</strong>, performance og løbende optimering.",
+      "socialDesc2": "Farver, lys, kontrast og format tilpasses kanalen og <strong>brandidentiteten</strong>, så indholdet fungerer både organisk og i kampagner — og skaber <strong>målbar effekt</strong>.",
+      "brandLogoTitle": "Brand & Logo Udvikling",
+      "adobeToolsTitle": "Adobe-værktøjer i mit workflow"
+    },
+    "webDev": {
+      "mainTitle": "Webudvikling",
+      "mainSubtitle": "Backend & Frontend",
+      "scrollDown": "Scroll ned",
+      "swiperTitle": "Websites jeg har bygget",
+      "frontendDev": "Frontend udvikling",
+      "uxUiSectionTitle": "Min tilgang til UX & UI Design",
+      "uxTitle": "UX Design",
+      "uxText": "Jeg starter altid med <strong>brugerens behov</strong> – gennem <strong>research</strong>, <strong>brugerrejser</strong> og <strong>brugertest</strong>. Jeg faciliterer workshops og samarbejder med <strong>udviklere</strong> og <strong>stakeholders</strong> for at sikre, at løsningen skaber <strong>reel værdi</strong>.",
+      "uiTitle": "UI Design",
+      "uiText": "Med værktøjer som <strong>Figma</strong> og <strong>Adobe XD</strong> skaber jeg <strong>wireframes</strong> og <strong>prototyper</strong>, der forener <strong>funktionalitet</strong> og <strong>æstetik</strong>. Jeg lægger vægt på <strong>brandidentitet</strong>, <strong>farvevalg</strong> og <strong>typografi</strong> – og sikrer en <strong>konsistent visuel oplevelse</strong>.",
+      "xdSectionTitle": "Adobe XD - Figma Prototyper",
+      "xdSectionSubtitle": "UX/UI - webdesign",
+      "codeUniverseTitle": "Mit kode-univers",
+      "designProcessSectionTitle": "Designproces & Målrettede Løsninger",
+      "designThinkingTitle": "Design Thinking",
+      "designThinkingText": "Jeg arbejder <strong>iterativt</strong> – fra indsamling af <strong>brugerindsigter</strong> til udvikling og test af <strong>prototyper</strong>. Gennem <strong>empati</strong> og <strong>idéudvikling</strong> finder jeg løsninger, der matcher <strong>brugernes reelle behov</strong>.",
+      "targetedSolutionsTitle": "Målrettede Løsninger",
+      "targetedSolutionsText": "Med fokus på en <strong>specifik målgruppe</strong> tilpasser jeg designet løbende ud fra <strong>feedback</strong>. Jeg skaber løsninger, der både er <strong>brugervenlige</strong> og understøtter <strong>forretningens mål</strong>.",
+      "fullstackSectionTitle": "Full Stack & Backend Udvikling",
+      "fullstackFrontend": "Frontend-integration",
+      "fullstackText1": "Jeg har erfaring med at udvikle <strong>full stack webapplikationer</strong> med <strong>Node.js</strong> og <strong>Express.js</strong>, hvor jeg har bygget <strong>REST APIs</strong> og integreret dem med <strong>databaser</strong>. Projekterne omfatter alt fra <strong>frontend-integration</strong> til backend-logik.",
+      "fullstackText2": "Jeg fokuserer på <strong>web security</strong> ved at implementere <strong>JWT-baseret authentication</strong> og sikre korrekt <strong>role-based access control</strong>. Koden er struktureret efter <strong>Separation of Concerns (SoC)</strong> og følger principperne i <strong>Object-Oriented Programming</strong>.",
+      "fullstackText3": "For at sikre systemets kvalitet arbejder jeg med både <strong>unit tests</strong> og <strong>end-to-end tests</strong> ved hjælp af <strong>Mocha</strong> og <strong>Chai</strong> — så performance og stabilitet er dokumenteret.",
+      "backendSectionTitle": "Backend Udviklingskompetencer",
+      "backendCard1Title": "Server-Side - Node.js & Express.js",
+      "backendCard1Text": "Bygger skalerbare, sikre og effektive server-side applikationer med <strong>Node.js</strong> og <strong>Express.js</strong>, efter best practices for <strong>performance</strong> og <strong>sikkerhed</strong>.",
+      "backendCard2Title": "REST API Design & Integration",
+      "backendCard2Text": "Designer og implementerer <strong>RESTful APIs</strong> for smidig kommunikation mellem frontend og backend, med fokus på <strong>ren arkitektur</strong> og <strong>problemfri integration</strong>.",
+      "backendCard3Title": "Database Management",
+      "backendCard3Text": "Forbinder applikationer til <strong>MongoDB</strong> og <strong>SQL databaser</strong> med optimerede forespørgsler og datamodellering for performance og pålidelighed.",
+      "enterpriseSectionTitle": "Enterprise Platforms – ServiceNow & Dynamics 365",
+      "enterpriseText1": "Jeg har stærk forståelse for udvikling i <strong>platforms-økosystemer</strong> som <strong>ServiceNow</strong> og <strong>Dynamics 365</strong>. Selvom jeg ikke har haft kommercielle projekter i netop disse systemer endnu, kan jeg hurtigt omsætte mine <strong>full-stack</strong> erfaringer (REST, auth, data-modellering, integrationer, field mapping) til disse miljøer.",
+      "enterpriseText2": "<strong>Arkitektur & data:</strong> miljøer (Dev/Test/Prod), <strong>ALM</strong> og udrulning, tabel-/entitetsdesign (<strong>ServiceNow tables</strong> / <strong>Dataverse</strong>), roller og <strong>sikkerhed</strong>. I Dynamics arbejder man med <strong>Solutions</strong>, i ServiceNow med <strong>Update Sets</strong>.",
+      "enterpriseText3": "<strong>Processer & kvalitet:</strong> struktureret kode efter <strong>Separation of Concerns</strong>, testbarhed og versionsstyring (Git - DevOps). Jeg arbejder iterativt og dokumenterer beslutninger og flows.",
+      "dataTrackingTitle": "Data tracking & Conversion Rate Optimization (CRO)",
+      "dataTrackingP1": "Med <strong>Google Analytics 4</strong> kan vi måle det, der virkelig tæller – for eksempel hvor mange besøgende vi har, hvor de klikker, og hvor mange der <strong>gennemfører et køb</strong> eller udfylder en formular. Det giver os <strong>kvalitative data</strong>, så vi kan se præcist, hvor i kunderejsen folk falder fra, og hvad der skaber resultater.",
+      "dataTrackingP2": "Med <strong>Hotjar</strong> / <strong>Microsoft Clarity</strong> analyserer jeg <strong>heatmaps</strong>, <strong>session recordings</strong> og <strong>funnels</strong> for at finde friktion: fx drop-offs i checkout, uklare CTA’er eller langsomme sider.",
+      "dataTrackingP3": "På baggrund af data prioriterer jeg hypoteser, laver <strong>eksperimenter/A-B tests</strong> og itererer løsningen, så vi løfter <strong>conversion rate</strong>, <strong>engagement</strong> og <strong>indtjening</strong> – med tydelige <strong>KPI’er</strong> og løbende rapportering.",
+      "abTestingGdprTitle": "A/B Testing & GDPR",
+      "abTestingTitle": "A/B Testing – Split-test",
+      "abTestingP": "Ved A/B tests kan vi afprøve to versioner af en side, fx en ny knapfarve eller en ændret overskrift, og se hvilken løsning der giver flest konverteringer. Det betyder, at vi optimerer på baggrund af reel brugeradfærd fremfor mavefornemmelser.",
+      "gdprTitle": "GDPR & Datasamling",
+      "gdprP": "Dataindsamling skal ske i overensstemmelse med GDPR. Det betyder gennemsigtighed og respekt for brugernes privatliv – vi indsamler kun de oplysninger, der er nødvendige, og sørger for samtykke og korrekt anonymisering.",
+      "cmsToolsTitle": "CMS Platforms I Work With"
+    },
+      "footer": {
+        "title": "Lad os skabe resultater sammen!",
+        "contact": {
+          "title": "Kontakt mig",
+          "subtitle": "Skriv en mail eller send en SMS til mig"
+        },
+        "email": "behdin2010@gmail.com",
+        "phone": "+45 53 52 52 39",
+        "social": {
+          "title": "Find mig på de sociale medier:"
+        }
+      }
+    }
