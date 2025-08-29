@@ -55,14 +55,14 @@
             <div class="youtube-music-videos">
                 <div class="video-container extra-margin">
                     <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail">
-                        <source :data-src="vidOffice" type="video/mp4" />
+                        <source src="/video/VIKING_Office_Theme_LinkedIn.mp4" type="video/mp4" />
                         {{ $t('video.browserSupport') }}
                     </video>
                 </div>
 
                 <div class="video-container extra-margin">
                     <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail2">
-                        <source :data-src="vidProduction" type="video/mp4" />
+                        <source src="/video/VIKING_Production_Theme_LinkedIn.mp4" type="video/mp4" />
                         {{ $t('video.browserSupport') }}
                     </video>
                 </div>
@@ -78,40 +78,37 @@ import thumbnail2 from '@/assets/Thumbnail2.webp'
 import { defineProps } from 'vue';
 import { onMounted, onBeforeUnmount } from 'vue'
 
-import vidOffice from '@/assets/video/VIKING_Office_Theme_LinkedIn.mp4'
-import vidProduction from '@/assets/video/VIKING_Production_Theme_LinkedIn.mp4'
-
 let io
 
 onMounted(() => {
-  const videos = Array.from(document.querySelectorAll('video.lazy-video'))
-  // اگر IO نبود یا اصلاً ویدیویی نیست: فوراً src را ست کن (فالبک)
-  if (!('IntersectionObserver' in window) || videos.length === 0) {
-    videos.forEach(v => {
-      v.querySelectorAll('source[data-src]').forEach(s => {
-        s.src = s.dataset.src
-        s.removeAttribute('data-src')
-      })
-      if (typeof v.load === 'function') v.load()
-    })
-    return
-  }
+    const videos = Array.from(document.querySelectorAll('video.lazy-video'))
+    // اگر IO نبود یا اصلاً ویدیویی نیست: فوراً src را ست کن (فالبک)
+    if (!('IntersectionObserver' in window) || videos.length === 0) {
+        videos.forEach(v => {
+            v.querySelectorAll('source[data-src]').forEach(s => {
+                s.src = s.dataset.src
+                s.removeAttribute('data-src')
+            })
+            if (typeof v.load === 'function') v.load()
+        })
+        return
+    }
 
-  io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return
-      const video = entry.target
-      const sources = video.querySelectorAll('source[data-src]')
-      sources.forEach(s => {
-        s.src = s.dataset.src
-        s.removeAttribute('data-src')
-      })
-      if (typeof video.load === 'function') video.load()
-      io.unobserve(video)
-    })
-  }, { rootMargin: '200px 0px', threshold: 0.1 })
+    io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return
+            const video = entry.target
+            const sources = video.querySelectorAll('source[data-src]')
+            sources.forEach(s => {
+                s.src = s.dataset.src
+                s.removeAttribute('data-src')
+            })
+            if (typeof video.load === 'function') video.load()
+            io.unobserve(video)
+        })
+    }, { rootMargin: '200px 0px', threshold: 0.1 })
 
-  videos.forEach(v => io.observe(v))
+    videos.forEach(v => io.observe(v))
 })
 
 onBeforeUnmount(() => { if (io) io.disconnect() })
