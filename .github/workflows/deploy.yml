@@ -3,7 +3,7 @@ name: Build and Deploy to One.com
 on:
   push:
     branches:
-      - main   # هر بار push روی main اجرا میشه
+      - main
 
 jobs:
   build:
@@ -12,11 +12,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          lfs: true   # 👈 ویدیوهای LFS هم میاد
+
+      - name: Pull LFS files
+        run: git lfs pull
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18   # نسخه Node.js که Vue 3 نیاز داره
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -31,7 +36,7 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: ${{ secrets.SFTP_PORT }}
-          local_path: "./dist/*"
-          remote_path: "./"
+          local_path: ./dist/*
+          remote_path: ./
           sftp_only: true
-          delete_remote_files: false
+          delete_remote_files: true
