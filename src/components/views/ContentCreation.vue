@@ -4,7 +4,7 @@
     <div id="video-dark-version-image" class="bg-video img" :class="[{ 'dark-mode-cover-home': dark }]">
         <!-- Desktop -->
         <video autoplay loop muted playsinline class="background-video">
-            <source :src="videoSrc" type="video/mp4" />
+            <source src="/video/ContentCreationBanner.mp4" type="video/mp4" />
         </video>
 
         <!-- Main heading -->
@@ -133,7 +133,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { defineProps } from 'vue';
-import videoSrc from '@/assets/video/ContentCreationBanner.mp4'
+
 
 defineProps({
     dark: {},
