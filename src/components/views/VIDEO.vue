@@ -55,14 +55,14 @@
             <div class="youtube-music-videos">
                 <div class="video-container extra-margin">
                     <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail">
-                        <source src="/video/VIKING_Office_Theme_LinkedIn.mp4" type="video/mp4" />
+                        <source data-src="/video/VIKING_Office_Theme_LinkedIn.mp4" type="video/mp4" />
                         {{ $t('video.browserSupport') }}
                     </video>
                 </div>
 
                 <div class="video-container extra-margin">
                     <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail2">
-                        <source src="/video/VIKING_Production_Theme_LinkedIn.mp4" type="video/mp4" />
+                        <source data-src="/video/VIKING_Production_Theme_LinkedIn.mp4" type="video/mp4" />
                         {{ $t('video.browserSupport') }}
                     </video>
                 </div>
