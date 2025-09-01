@@ -833,6 +833,10 @@ const adobeTools = ref([
         max-height: 64px;
         max-width: 110px;
     }
+
+    .carousel-wrapper {
+        width: 55vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -843,6 +847,10 @@ const adobeTools = ref([
     .visual-box,
     .story-box {
         padding: 1.5rem;
+    }
+
+    .carousel-wrapper {
+        width: 80vw;
     }
 }
 
@@ -900,6 +908,20 @@ const adobeTools = ref([
 
     .logo-grid {
         gap: 1.5rem;
+    }
+
+    .carousel-section {
+        padding: 6rem 5%;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    .carousel-wrapper {
+        width: 90vw;
     }
 }
 </style>
