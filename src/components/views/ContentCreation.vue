@@ -101,6 +101,71 @@
     </section>
 
 
+    <!-- Social Media Experience – DK Skønhedsklinik -->
+    <section class="social-exp-section splitBackGround" data-aos="fade-up">
+        <h2 class="title">Social Media Erfaring – DK Skønhedsklinik</h2>
+        <p class="subtitle">
+            Klik på boksene for at se de sociale medier og mine resultater for klinikken.
+        </p>
+
+        <div class="content-wrapper">
+            <!-- Instagram Experience -->
+            <div class="exp-box" data-aos="fade-right">
+                <h3 class="icon-title">
+                    <img src="@/assets/Logo/Instagram.webp" alt="Instagram" />
+                    Instagram Management
+                </h3>
+                <p>
+                    Jeg har arbejdet strategisk med klinikkens <b>branding på Instagram</b> – herunder
+                    optimering af <b>bio</b>, udvikling af <b>visuel identitet</b> og design af
+                    <b>stories og highlights</b>, så profilen fremstår professionel og genkendelig.
+                    Gennem organisk content og kontinuerlig opbygning af universet har jeg styrket
+                    <b>engagement og brand awareness</b>.
+                </p>
+                <a href="https://www.instagram.com/dk_skonhedsklinik/" target="_blank" class="cta-btn">
+                    Besøg Instagram →
+                </a>
+            </div>
+
+            <!-- Facebook Experience -->
+            <div class="exp-box" data-aos="fade-left">
+                <h3 class="icon-title">
+                    <img src="@/assets/Logo/Facebook_Logo_Primary.webp" alt="Facebook" />
+                    Facebook Promotion
+                </h3>
+                <p>
+                    På Facebook har jeg haft ansvar for opsætning og optimering af kampagner gennem
+                    <b>Meta Ads Manager</b>, hvor jeg har arbejdet med <b>funnels</b> og målrettede
+                    annoncer for at nå og tiltrække den rette målgruppe. Kombinationen af organisk
+                    content og <b>datadrevet paid promotion</b> har skabt målbare resultater i form af
+                    <b>flere kundehenvendelser og øget synlighed</b>.
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100054595142567" target="_blank" class="cta-btn">
+                    Besøg Facebook →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Showcase Carousel -->
+    <section class="carousel-section" data-aos="fade-up">
+        <h2 class="section-title">Social Media Showcase</h2>
+        <b class="carousel-subtitle">Carousel designet og produceret til DK Skønhedsklinik</b>
+
+        <div class="carousel-wrapper">
+            <div class="carousel" ref="carouselRef">
+                <div class="carousel-slide" v-for="(slide, index) in showcaseSlides" :key="index">
+                    <img :src="slide.src" :alt="slide.alt" />
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-btn prev" @click="prevSlide">‹</button>
+            <button class="carousel-btn next" @click="nextSlide">›</button>
+        </div>
+    </section>
+
+
     <!-- Brand & Logo Development -->
     <section class="brand-logo-section splitBackGround" data-aos="fade-up">
         <h2 class="title">{{ $t('contentCreation.brandLogoTitle') }}</h2>
@@ -194,6 +259,35 @@ onUnmounted(() => {
     window.removeEventListener('mouseup', handleMouseUp)
     window.removeEventListener('touchend', handleTouchEnd)
 })
+
+
+
+const showcaseSlides = ref([
+    { src: require('@/assets/SoMe/Forundersøgelse1.webp'), alt: 'Clinic ad 1' },
+    { src: require('@/assets/SoMe/Forundersøgelse2.webp'), alt: 'Clinic ad 2' },
+    { src: require('@/assets/SoMe/Forundersøgelse3.webp'), alt: 'Clinic ad 3' },
+    { src: require('@/assets/SoMe/Forundersøgelse4.webp'), alt: 'Clinic ad 4' },
+])
+
+
+const carouselRef = ref(null)
+let currentIndex = ref(0)
+
+const updateCarousel = () => {
+    if (carouselRef.value) {
+        carouselRef.value.style.transform = `translateX(-${currentIndex.value * 100}%)`
+    }
+}
+
+const prevSlide = () => {
+    currentIndex.value = (currentIndex.value - 1 + showcaseSlides.value.length) % showcaseSlides.value.length
+    updateCarousel()
+}
+
+const nextSlide = () => {
+    currentIndex.value = (currentIndex.value + 1) % showcaseSlides.value.length
+    updateCarousel()
+}
 
 
 const brandLogos = ref([
@@ -388,7 +482,7 @@ const adobeTools = ref([
     min-width: 280px;
 
     .section-title {
-        font-size: 2.2rem;
+        font-size: 50px !important;
         margin-bottom: 1rem;
     }
 
@@ -417,9 +511,167 @@ const adobeTools = ref([
 
 
 
+.social-exp-section {
+    background: var(--block-backgroundColor);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+
+    .title {
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    }
+
+    .subtitle {
+        margin-top: -1rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.1rem;
+        color: #ddd;
+        text-align: center;
+    }
+
+    .icon-title {
+        color: var(--text-color);
+    }
+
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 3rem;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .exp-box {
+        background: var(--block-backgroundColor);
+        border-radius: 18px;
+        padding: 2rem;
+        flex: 1 1 400px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, .25);
+        transition: transform .25s ease, box-shadow .25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .cta-btn {
+            margin-top: 1.5rem;
+            align-self: flex-start;
+            background: #fff;
+            color: #000;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+
+            &:hover {
+                background: var(--highlight-color, #567A93);
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 38px rgba(0, 0, 0, .35);
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.65rem;
+            color: var(--text-color);
+        }
+    }
+}
 
 
 
+.carousel-section {
+    background: var(--background-color);
+    padding: 6rem 10%;
+    text-align: center;
+    color: #fff;
+
+    .section-title {
+        margin-bottom: 2rem;
+        font-size: 50px !important;
+    }
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    max-width: 900px;
+    width: 45vw;
+    margin: 50px auto 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+    }
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 
 
