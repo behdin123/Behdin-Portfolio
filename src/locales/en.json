@@ -46,9 +46,10 @@
   },
   
   "navigation": {
+    "projects": "Projects",
     "education": "Education",
     "video": "Video",
-    "artworks": "Art Works",
+    "artworks": "Gallery",
     "about": "About Me"
   },
   

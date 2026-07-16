@@ -7,11 +7,12 @@
     </router-link>
   </div>
 
-  <div class="justify">
-    <div class="navbar-links">
+  <div class="justify" :class="{ open: menuOpen }">
+    <div class="navbar-links" @click="menuOpen = false">
+      <router-link to="/projekter">{{ $t('navigation.projects') }}</router-link>
       <router-link to="/Uddannelse">{{ $t('navigation.education') }}</router-link>
       <router-link to="/VIDEO">{{ $t('navigation.video') }}</router-link>
-      <router-link to="/ART-WORKS">{{ $t('navigation.artworks') }}</router-link>
+      <router-link to="/galleri">{{ $t('navigation.artworks') }}</router-link>
       <router-link to="/OM-MIG">{{ $t('navigation.about') }}</router-link>
     </div>
   </div>
@@ -45,35 +46,37 @@
     <!-- World ikon -->
     <div class="language-selector">
       <div class="current-language" @click="toggleLanguageDropdown">
-        <span class="flag-emoji">
-          {{ currentLanguage === 'dk' ? '🇩🇰' : currentLanguage === 'en' ? '🇬🇧' : '🇩🇪' }}
-        </span>
+        <span class="flag" v-html="flags[currentLanguage] || flags.dk"></span>
         <span class="language-code">{{ currentLanguage.toUpperCase() }}</span>
       </div>
-        
+
     <div class="language-dropdown" v-show="showLanguageDropdown">
       <div class="language-option" @click="changeLanguage('dk')">
-        <span class="flag-emoji">🇩🇰</span>
+        <span class="flag" v-html="flags.dk"></span>
         <span>Dansk</span>
       </div>
       <div class="language-option" @click="changeLanguage('en')">
-        <span class="flag-emoji">🇬🇧</span>
+        <span class="flag" v-html="flags.en"></span>
         <span>English</span>
       </div>
       <div class="language-option" @click="changeLanguage('de')">
-        <span class="flag-emoji">🇩🇪</span>
+        <span class="flag" v-html="flags.de"></span>
         <span>Deutsch</span>
       </div>
     </div>
   </div>
 
   
-    <!-- Toggle knap ikon -->
-    <div class="toggel-btn">
-      <img v-if="!dark || isSticky" class="icon toggle-menu" src="../assets/toggel-menu.svg" width="23px"
-        height="23px" />
-      <img v-else class="icon toggle-menu" src="../assets/toggel-menu dark-version.svg" width="23px" height="23px" />
-    </div>
+    <!-- Toggle knap (animeret burger) -->
+    <button
+      class="toggel-btn"
+      :class="{ open: menuOpen }"
+      @click="menuOpen = !menuOpen"
+      :aria-expanded="menuOpen"
+      :aria-label="menuOpen ? 'Luk menu' : 'Åbn menu'"
+    >
+      <span></span><span></span><span></span>
+    </button>
   </div>
 
 </template>
@@ -91,8 +94,22 @@ defineProps({
   isSticky: Boolean,
 });
 
+const router = useRouter();
+const menuOpen = ref(false);
 const showLanguageDropdown = ref(false);
 const currentLanguage = ref('');
+
+// Luk mobil-menuen ved ruteskift
+router.afterEach(() => {
+  menuOpen.value = false;
+});
+
+// SVG-flag (emoji-flag vises ikke på Windows)
+const flags = {
+  dk: '<svg viewBox="0 0 37 28" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="5" height="28" fill="#fff"/><rect y="11.5" width="37" height="5" fill="#fff"/></svg>',
+  en: '<svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg"><clipPath id="ukclip"><rect width="60" height="30"/></clipPath><g clip-path="url(#ukclip)"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+  de: '<svg viewBox="0 0 5 3" xmlns="http://www.w3.org/2000/svg"><rect width="5" height="1" fill="#000"/><rect width="5" height="1" y="1" fill="#DD0000"/><rect width="5" height="1" y="2" fill="#FFCE00"/></svg>',
+};
 
 // Function to get the current language from localStorage
 const getCurrentLanguage = () => {
@@ -130,82 +147,28 @@ watch(() => i18next.language, (newLang) => {
 
 
 
+// Luk sprog-dropdown ved klik udenfor
+const handleClickOutside = (event) => {
+  const dropdown = document.querySelector('.language-selector');
+  if (dropdown && !dropdown.contains(event.target)) {
+    showLanguageDropdown.value = false;
+  }
+};
+
+// Luk menuen automatisk når skærmen bliver desktop-bred
+const handleResize = () => {
+  if (window.innerWidth > 1000) menuOpen.value = false;
+};
+
 onMounted(() => {
-  const burger = document.querySelector('.toggel-btn');
-  const nav = document.querySelector('.justify');
-  const router = useRouter();
-
-   // Initialize language on mount
-   initializeLanguage();
-
-  // Handle clicking outside of language dropdown
-  const handleClickOutside = (event) => {
-    const dropdown = document.querySelector('.language-selector');
-    if (dropdown && !dropdown.contains(event.target)) {
-      showLanguageDropdown.value = false;
-    }
-  };
-
+  initializeLanguage();
   document.addEventListener('click', handleClickOutside);
+  window.addEventListener('resize', handleResize);
+});
 
-  // Cleanup
-  onUnmounted(() => {
-    document.removeEventListener('click', handleClickOutside);
-  });
-
-  // Funktion til at tjekke om skærmen er mobil (f.eks. under 768px)
-  const isMobile = () => window.innerWidth <= 768;
-
-  // Toggle navigation visibility on burger click
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    if (nav.matches('.show')) {
-      nav.classList.remove('end');
-      nav.style.setProperty('display', 'flex', 'important');
-    } else {
-      nav.classList.add('end');
-      setTimeout(() => {
-        nav.style.setProperty('display', 'none', 'important');
-      }, 1000);
-    }
-  });
-
-  // Hide navigation on link click (kun i mobilversion)
-  const navLinks = document.querySelectorAll('.justify a');
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      if (isMobile()) { // Kun skjul navigation, hvis det er mobilversion
-        nav.classList.remove('show');
-        nav.style.setProperty('display', 'none', 'important');
-      }
-    });
-  });
-
-  // Hide navigation on logo click (kun i mobilversion)
-  const logo = document.querySelector('.logo');
-  logo.addEventListener('click', () => {
-    if (isMobile()) { // Kun skjul navigation, hvis det er mobilversion
-      nav.classList.remove('show');
-      nav.style.setProperty('display', 'none', 'important');
-    }
-  });
-
-  // Lyt til ruteændringer og luk navigationen (kun i mobilversion)
-  router.afterEach(() => {
-    if (isMobile()) { // Kun skjul navigation, hvis det er mobilversion
-      nav.classList.remove('show');
-      nav.style.setProperty('display', 'none', 'important');
-    }
-  });
-
-  // Opdatering af isMobile ved ændring af vinduestørrelse (tilføj lytter)
-  window.addEventListener('resize', () => {
-    if (!isMobile()) {
-      // Hvis skærmstørrelsen ændres til større end mobil, vis navigation
-      nav.classList.remove('show');
-      nav.style.setProperty('display', 'flex', 'important');
-    }
-  });
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside);
+  window.removeEventListener('resize', handleResize);
 });
 
 
@@ -435,52 +398,29 @@ input:checked+.slider:before {
 
 @media only screen and (max-width: 1000px) {
   .justify {
-    width: 100%;
-    height: 435px;
-    top: 144px;
     position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* Klip menuens slide-in transform, så den ikke skaber vandret overflow når menuen er lukket */
+    overflow: hidden;
     z-index: 20;
-    display: none !important;
     justify-content: flex-end;
-    padding: 21px 0 0 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #24353F) !important;
-    animation-name: toggleMenu;
-    animation-duration: 1s;
+    padding: 1.6rem 0 2.2rem;
+    background: linear-gradient(to bottom, rgba(36, 53, 63, 0), #24353F 55%) !important;
+    /* Skjult som standard – glider blødt ind når .open sættes */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-14px);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.4s;
   }
 
-
-  .show {
-    animation-name: toggleMenu;
-    animation-duration: 1s;
-  }
-
-  .end {
-    animation-name: toggleMenuEnd;
-    animation-duration: 1s;
-  }
-
-  @keyframes toggleMenu {
-    from {
-      opacity: 0;
-      height: 50px;
-    }
-
-    to {
-      opacity: 1;
-      height: 450px;
-    }
-  }
-
-  @keyframes toggleMenuEnd {
-    from {
-      opacity: 1;
-      height: 450px;
-    }
-
-    to {
-      opacity: 0;
-      height: 50px;
-    }
+  .justify.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .navbar-links {
@@ -488,21 +428,59 @@ input:checked+.slider:before {
     text-align: right;
 
     a {
-      padding-bottom: 80px !important;
+      padding: 0.85rem 1.6rem !important;
       color: #EAEAEA !important;
-      font-size: 24px !important;
+      font-size: 22px !important;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transform: translateX(24px);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
 
-  .toggel-btn {
-    display: flex !important;
-  }
+  /* Værktøjs-links glider ind ét ad gangen når menuen åbnes */
+  .justify.open .navbar-links a { opacity: 1; transform: translateX(0); }
+  .justify.open .navbar-links a:nth-child(1) { transition-delay: 0.06s; }
+  .justify.open .navbar-links a:nth-child(2) { transition-delay: 0.11s; }
+  .justify.open .navbar-links a:nth-child(3) { transition-delay: 0.16s; }
+  .justify.open .navbar-links a:nth-child(4) { transition-delay: 0.21s; }
+  .justify.open .navbar-links a:nth-child(5) { transition-delay: 0.26s; }
 
-  .icon {
-    margin: 0 15px;
-  }
+  .toggel-btn { display: flex !important; }
+
+  .icon { margin: 0 15px; }
 }
+
+/* Animeret burger-ikon (3 streger → X) */
+.toggel-btn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.toggel-btn span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  border-radius: 2px;
+  background: var(--tertiary-color);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease, background 0.3s ease;
+}
+.toggel-btn.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.toggel-btn.open span:nth-child(2) { opacity: 0; }
+.toggel-btn.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* Sticky nav har hvid baggrund – gør burger-stregerne mørke der */
+.sticky .toggel-btn span { background: #000; }
+
+/* Aktiv side fremhæves i navigationen */
+.navbar-links a.router-link-active { color: var(--quaternary-color) !important; }
 
 @media only screen and (max-width: 525px) {
   .logo-img {
@@ -530,9 +508,16 @@ input:checked+.slider:before {
     align-items: center;
     padding: 4px;
     
-    .flag-emoji {
-      font-size: 20px;
-      line-height: 1;
+    .flag {
+      display: inline-flex;
+
+      :deep(svg) {
+        width: 21px;
+        height: 15px;
+        border-radius: 2px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+        display: block;
+      }
     }
 
     .language-code {
@@ -564,11 +549,18 @@ input:checked+.slider:before {
       gap: 8px;
       transition: background-color 0.2s;
 
-      .flag-emoji {
-        font-size: 16px; // Adjust emoji size
+      .flag {
         margin-right: 8px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
+
+        :deep(svg) {
+          width: 19px;
+          height: 13px;
+          border-radius: 2px;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+          display: block;
+        }
       }
 
       &:hover {

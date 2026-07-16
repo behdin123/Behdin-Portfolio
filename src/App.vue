@@ -256,9 +256,12 @@ h2 {
 
 
 
+html,
 body {
   margin: 0;
   background: #F4F4F4;
+  /* Global sikkerhed mod vandret overflow (clip bryder ikke sticky/fixed) */
+  overflow-x: clip;
 }
 
 #app {
@@ -322,23 +325,8 @@ body {
 }
 
 .default-bg {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  background: rgba(255, 255, 255, 0.5);
   /* Justeret fade */
-}
-
-.default-bg::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  /* Placerer det lige under navigationen */
-  left: 0;
-  width: 100%;
-  height: 450px;
-  /* Juster efter behov */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
-  /* Fortsætter fade */
-  pointer-events: none;
-  /* Sørger for, at pseudo-elementet ikke påvirker klik */
 }
 
 .dark-theme {

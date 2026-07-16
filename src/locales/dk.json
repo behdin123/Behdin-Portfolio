@@ -45,9 +45,10 @@
       "aboutMeDescription2": "Efter at have afsluttet multimediedesigner uddannelsen besluttede jeg at anvende mine færdigheder i erhvervslivet, hvor jeg blev ansat hos VIKING Life-Saving, samtidig med at jeg studerede videre som webudvikler."
     },
     "navigation": {
+        "projects": "Projekter",
         "education": "Uddannelse",
         "video": "Video",
-        "artworks": "Art Works",
+        "artworks": "Galleri",
         "about": "Om Mig"
     },
     "education": {

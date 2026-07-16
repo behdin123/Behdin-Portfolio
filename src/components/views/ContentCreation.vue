@@ -4,7 +4,7 @@
     <div id="video-dark-version-image" class="bg-video img" :class="[{ 'dark-mode-cover-home': dark }]">
         <!-- Desktop -->
         <video autoplay loop muted playsinline class="background-video">
-            <source src="/video/ContentCreationBanner.mp4" type="video/mp4" />
+            <source src="/video/ContentCreationBanner-720.mp4" type="video/mp4" />
         </video>
 
         <!-- Main heading -->

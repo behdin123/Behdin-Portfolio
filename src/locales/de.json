@@ -45,9 +45,10 @@
       "aboutMeDescription2": "Nach Abschluss meiner Multimedia-Designer-Ausbildung beschloss ich, meine Fähigkeiten in der Geschäftswelt einzusetzen, wo ich bei VIKING Life-Saving eingestellt wurde, während ich gleichzeitig mein Studium als Webentwickler fortsetzte."
     },
     "navigation": {
+    "projects": "Projekte",
     "education": "Ausbildung",
     "video": "Video",
-    "artworks": "Art Works",
+    "artworks": "Galerie",
     "about": "Über Mich"
   },
   "education": {

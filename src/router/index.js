@@ -8,6 +8,16 @@ const routes = [
     component: AppHome
   },
   {
+    path: '/projekter',
+    name: 'Projekter',
+    component: () => import('@/components/views/ProjectsView.vue')
+  },
+  {
+    path: '/projekter/:slug',
+    name: 'Case',
+    component: () => import('@/components/views/CaseView.vue')
+  },
+  {
     path: '/Uddannelse',
     name: 'Uddannelse',
     component: () => import('@/components/views/AppUddannelse.vue')
@@ -18,9 +28,13 @@ const routes = [
     component: () => import('@/components/views/VIDEO.vue')
   },
   {
-    path: '/ART-WORKS',
-    name: 'ART-WORKS',
+    path: '/galleri',
+    name: 'Galleri',
     component: () => import('@/components/views/ART-WORKS.vue')
+  },
+  {
+    path: '/ART-WORKS',
+    redirect: '/galleri'
   },
   {
     path: '/OM-MIG',
@@ -42,7 +56,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior(/*to, from, savedPosition*/) {
+  scrollBehavior(to) {
+    if (to.hash) {
+      return { el: to.hash, top: 90, behavior: 'smooth' };
+    }
     return { top: 0 };
   },
 });
