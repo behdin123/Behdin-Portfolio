@@ -42,7 +42,6 @@
       <div class="f-col">
         <h3>{{ ui.contactTitle }}</h3>
         <a href="mailto:behdin2010@gmail.com">behdin2010@gmail.com</a>
-        <a href="tel:+4553525239">+45 53 52 52 39</a>
         <p class="f-location">{{ ui.location }}</p>
       </div>
 

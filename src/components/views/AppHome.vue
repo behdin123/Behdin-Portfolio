@@ -48,6 +48,10 @@
         </div>
       </div>
 
+      <button class="scroll-cue" @click="scrollToNext" aria-label="Scroll ned">
+        <span class="mouse"><span class="wheel"></span></span>
+      </button>
+
       <div class="hero2-spectrum" v-reveal="{ delay: 480 }">
         <div class="spectrum-labels">
           <span class="s-design">{{ ui.spectrumDesign }}</span>
@@ -210,6 +214,10 @@ const quotes = [
   },
 ];
 
+function scrollToNext() {
+  window.scrollBy({ top: window.innerHeight * 0.9, behavior: 'smooth' });
+}
+
 const uiStrings = {
   badge: { dk: 'Visual Communication Specialist hos InoPlay', en: 'Visual Communication Specialist at InoPlay', de: 'Visual Communication Specialist bei InoPlay' },
   role1: { dk: 'Multimediedesigner', en: 'Multimedia Designer', de: 'Multimediadesigner' },
@@ -351,6 +359,7 @@ const ui = computed(() => {
 
 /* ---------- Hero ---------- */
 .hero2 {
+  padding-top: 6.5rem;
   position: relative;
   min-height: 85vh;
   display: flex;
@@ -476,7 +485,7 @@ const ui = computed(() => {
 .hero2-lead {
   font-size: clamp(0.98rem, 1.35vw, 1.1rem);
   line-height: 1.75;
-  max-width: 38rem;
+  max-width: 39rem;
   opacity: 0.85;
   margin: 0 0 2.2rem;
 }
@@ -622,6 +631,57 @@ const ui = computed(() => {
     background: rgba(128, 128, 128, 0.14);
   }
   .spectrum-labels { font-size: 0.6rem; letter-spacing: 0.06em; }
+}
+
+/* ---------- Scroll-indikator ---------- */
+.scroll-cue {
+  align-self: center;
+  margin: 0.4rem 0 1.4rem;
+  padding: 0.4rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.25s ease;
+
+  &:hover { opacity: 1; }
+  &:hover .mouse { transform: translateY(3px); }
+
+  .mouse {
+    display: block;
+    width: 24px;
+    height: 38px;
+    border: 2px solid var(--accent);
+    border-radius: 14px;
+    position: relative;
+    transition: transform 0.25s ease;
+  }
+
+  .wheel {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 4px;
+    height: 8px;
+    margin-left: -2px;
+    border-radius: 2px;
+    background: linear-gradient(var(--accent), var(--gold));
+    animation: scroll-wheel 1.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+}
+
+@keyframes scroll-wheel {
+  0% { opacity: 0; transform: translateY(0); }
+  25% { opacity: 1; }
+  70% { opacity: 1; transform: translateY(13px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue .wheel { animation: none; }
+}
+@media (max-width: 760px) {
+  .scroll-cue { display: none; }
 }
 
 /* ---------- Featured cases ---------- */
@@ -905,8 +965,8 @@ const ui = computed(() => {
 /* ---------- Responsivt ---------- */
 
 /* Laptop (< 1550px): strammere skala og luft */
-@media (max-width: 1550px) {
-  .hero2 { padding: 6.5rem 1.5rem 1.5rem; min-height: 90vh; }
+@media (max-width: 1600px) {
+  .hero2 { min-height: 90vh; }
 
   .hero2-inner {
     max-width: 1020px;
@@ -915,7 +975,7 @@ const ui = computed(() => {
   }
 
   .hero2-name {
-    font-size: clamp(2.6rem, 5.5vw, 4.4rem) !important;
+    font-size: clamp(2.6rem, 4vw, 4.4rem) !important;
     margin-bottom: 1.5rem;
   }
 
@@ -924,13 +984,13 @@ const ui = computed(() => {
   .hero2-lead {
     font-size: 0.98rem;
     line-height: 1.7;
-    max-width: 33rem;
-    margin-bottom: 1.8rem;
+    max-width: 35rem;
+    margin-bottom: 1.3rem;
   }
 
-  .badge { margin-bottom: 1.4rem; font-size: 0.85rem; }
+  .badge { margin-bottom: 1rem; font-size: 0.85rem; }
 
-  .hero2-cta { margin-bottom: 2rem; }
+  .hero2-cta { margin-bottom: 1.4rem; }
   .btn { padding: 0.8rem 1.5rem; font-size: 0.95rem; }
 
   .hero2-stats {
