@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/.cloudflare/
+/build-cloudflare-check.log
 
 
 # local env files
