@@ -66,18 +66,26 @@
 
       <div class="branding-grid">
         <figure class="eb-video" v-reveal>
-          <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail">
-            <source data-src="/video/VIKING_Office_Theme_LinkedIn.mp4" type="video/mp4" />
-            {{ ui.browserSupport }}
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/_mayRk3eDRU"
+            title="VIKING – Office"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
           <figcaption>{{ ui.ebCaption1 }}</figcaption>
         </figure>
 
         <figure class="eb-video" v-reveal="{ delay: 120 }">
-          <video class="lazy-video" controls preload="none" playsinline :poster="thumbnail2">
-            <source data-src="/video/VIKING_Production_Theme_LinkedIn.mp4" type="video/mp4" />
-            {{ ui.browserSupport }}
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/_NIlei7Twqs"
+            title="VIKING – Production"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
           <figcaption>{{ ui.ebCaption2 }}</figcaption>
         </figure>
       </div>
@@ -94,48 +102,11 @@
 </template>
 
 <script setup>
-import { computed, defineProps, onMounted, onBeforeUnmount } from 'vue';
-import thumbnail from '@/assets/Thumbnail.webp';
-import thumbnail2 from '@/assets/Thumbnail2.webp';
+import { computed, defineProps } from 'vue';
 import { lang, pick } from '@/js/lang';
 import { vReveal } from '@/js/reveal';
 
 defineProps({ dark: {} });
-
-// Lazy-load af selvhostede videoer: src sættes først når videoen nærmer sig viewport
-let io;
-onMounted(() => {
-  const videos = Array.from(document.querySelectorAll('video.lazy-video'));
-  const activate = (v) => {
-    v.querySelectorAll('source[data-src]').forEach((s) => {
-      s.src = s.dataset.src;
-      s.removeAttribute('data-src');
-    });
-    if (typeof v.load === 'function') v.load();
-  };
-
-  if (!('IntersectionObserver' in window) || videos.length === 0) {
-    videos.forEach(activate);
-    return;
-  }
-
-  io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        activate(entry.target);
-        io.unobserve(entry.target);
-      });
-    },
-    { rootMargin: '200px 0px', threshold: 0.1 }
-  );
-
-  videos.forEach((v) => io.observe(v));
-});
-
-onBeforeUnmount(() => {
-  if (io) io.disconnect();
-});
 
 const processSteps = [
   {
@@ -524,10 +495,10 @@ const ui = computed(() => {
   width: 100%;
   max-width: 380px;
 
-  video {
+  iframe {
     width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
+    aspect-ratio: 9 / 16;
+    border: 0;
     border-radius: 10px;
     box-shadow: 0 20px 50px rgba(0, 0, 30, 0.22);
     display: block;

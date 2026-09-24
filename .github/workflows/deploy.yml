@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: vars.CLOUDFLARE_ENABLED != 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -36,8 +37,7 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: ${{ secrets.SFTP_PORT }}
-          local_path: ./dist/
+          local_path: ./dist/*
           remote_path: ./
           sftp_only: true
-          # Ren spejling af dist/ → index.html overskrives altid, og gamle bundles ryddes
-          delete_remote_files: true
+          delete_remote_files: false
